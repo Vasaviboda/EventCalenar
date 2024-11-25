@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <link rel="StyleSheet" href="Style.css">
+    <link rel="StyleSheet" href="evo-calendar.min.css">
+    <link rel="StyleSheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+    <body>
+        <div class="hero">
+            <div id="calendar"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+        <script src="evo-calendar.min.js"></script>
+        <script>$(document).ready(function() {
+            $('#calendar').evoCalendar({
+
+                    theme: "midnight-blue",
+                    calendarEvents: [ {
+                       
+                        id: 'event1', // Event's ID (required)
+                        name: "New Year", // Event name (required)
+                        date: "January/1/2020", // Event date (required)
+                        description:"The heart touching greetings will make feel anyon very special.Wish your near and dear one with our spectal greetings.",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                      },
+                      {
+                       
+                        id: 'event2', // Event's ID (required)
+                        name: "Woman's Day", // Event name (required)
+                        date: "March/8/2020", // Event date (required)
+                        description:"An equal world is an enabled world. How will you help forge a gender equal world? Celebrate women 's achivevement.Raise awareness against bias . Take action for equality.",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                      },
+                      
+                      {
+                       
+                        id: 'event3', // Event's ID (required)
+                        name: "Labor Day", // Event name (required)
+                        date: "May/1/2020", // Event date (required)
+                        description:"Labor Day is an annual holiday to celebrate the achievements of workrs.Labor Day has its origin in the labor union movement",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                      },
+                      
+                      {
+                        name: "Vacation Leave",
+                        badge: "09/13 - 09/15", // Event badge (optional)
+                        date: ["September/13/2024", "September/15/2024"], // Date range
+                        description: "Dasara leave for 3 days.", // Event description (optional)
+                        type: "event",
+                        color: "#63d867" // Event custom color (optional)
+                      }
+                      
+                    ]
+                  
+            })
+        })
+        </script>
+    
+
+    </body>
+</html>

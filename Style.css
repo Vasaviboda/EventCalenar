@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    body,h1,h2,h3,h4,h5,h6 {font-family: Sofia, serif;}
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg,#6ac1c5,#bda5ff);
+}
+
+
+#calendar{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
